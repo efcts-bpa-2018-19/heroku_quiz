@@ -23,6 +23,7 @@ export class ResultComponent implements OnInit {
         (data: any) => {
           this.quizService.correctAnswerCount = 0;
           this.quizService.qns.forEach((e, i) => {
+            //Correct answer
             if (e.answer == data[i])
               this.quizService.correctAnswerCount++;
             e.correct = data[i];
