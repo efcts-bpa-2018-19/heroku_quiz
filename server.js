@@ -14,3 +14,6 @@ app.get('*', function(req,res) {
 });
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 5000);
+
+var cors = require('cors')
+app.use(cors())
