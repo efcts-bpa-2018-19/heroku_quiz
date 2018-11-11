@@ -6,8 +6,8 @@ const path = require('path');
 
 const app = express();
 
-var cors = require('cors')
-app.use(cors())
+var cors = require('cors');
+app.use(cors());
 
 //app.use(function(req, res, next) {
 //  res.header("Access-Control-Allow-Origin", "*");
