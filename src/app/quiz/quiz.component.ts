@@ -28,6 +28,7 @@ export class QuizComponent implements OnInit {
     else {
       this.quizService.seconds = 0;
       this.quizService.qnProgress = 0;
+          //getQuestions ==> put data in quizService.qns 
       this.quizService.getQuestions().subscribe(
         (data: any) => {
           this.quizService.qns = data;
